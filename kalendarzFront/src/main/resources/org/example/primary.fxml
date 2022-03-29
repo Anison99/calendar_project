@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="backContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <top>
+      <Label fx:id="title" prefHeight="70.0" prefWidth="276.0" text="KALENDARZ" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="MS Gothic" size="60.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox fx:id="menuBOX" prefHeight="330.0" prefWidth="145.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="330.0" prefWidth="151.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="menuLabel" prefHeight="51.0" prefWidth="306.0" text="MENU">
+               <font>
+                  <Font name="MS Gothic" size="30.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="stringChoiceBox" prefHeight="26.0" prefWidth="310.0" />
+            <HBox prefHeight="42.0" prefWidth="303.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#buttonOption" prefHeight="42.0" prefWidth="102.0" text="ZASTOSUJ" />
+                  <Button mnemonicParsing="false" onAction="#removeWeek" prefHeight="42.0" prefWidth="103.0" text="USUŃ TYDZIEŃ" />
+                  <Button mnemonicParsing="false" onAction="#moveWeek" prefHeight="42.0" prefWidth="106.0" text="DODAJ TYDZIEŃ" />
+               </children>
+            </HBox>
+            <VBox prefHeight="38.0" prefWidth="303.0" />
+            <VBox prefHeight="78.0" prefWidth="303.0">
+               <children>
+                  <Label fx:id="dateLabel1" prefHeight="37.0" prefWidth="302.0" />
+                  <Label fx:id="dateLabel2" prefHeight="42.0" prefWidth="303.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
