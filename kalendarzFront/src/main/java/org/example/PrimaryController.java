@@ -3,6 +3,7 @@ package org.example;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import pcalendar.Date;
@@ -16,6 +17,7 @@ import java.util.ResourceBundle;
 public class PrimaryController implements Initializable {
     // ---- OBJECTS
     public Label dateLabel2;
+    public Button mailNext;
 
     // ---- JAVA
 

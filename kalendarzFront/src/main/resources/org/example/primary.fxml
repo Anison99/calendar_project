@@ -45,6 +45,7 @@
                   <Label fx:id="dateLabel2" prefHeight="42.0" prefWidth="303.0" />
                </children>
             </VBox>
+            <Button fx:id="mailNext" mnemonicParsing="false" prefHeight="32.0" prefWidth="100.0" text="Button" />
          </children>
       </VBox>
    </center>
