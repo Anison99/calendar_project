@@ -1,11 +1,17 @@
 package com.sendmail;
 
+import javafx.event.ActionEvent;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 public class SendMail {
+
     public static void main(String[] args) {
 
         final String username = "azych5913@gmail.com";

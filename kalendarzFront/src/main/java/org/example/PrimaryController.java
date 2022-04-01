@@ -1,6 +1,7 @@
 package org.example;
 //-------- JAVA
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -104,10 +105,16 @@ public class PrimaryController implements Initializable {
         update();
     }
 
+    // ----- PRZEŁĄCZANIE SCENY ------
+    public void switchToScene2(ActionEvent event){
+
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         stringChoiceBox.getItems().addAll(types);
         stringChoiceBox.setValue("Default");
     }
+
+
 }

@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
@@ -24,12 +23,12 @@
                   <Font name="MS Gothic" size="38.0" />
                </font>
             </Label>
-            <TextField fx:id="fromBox" promptText="od" />
-            <VBox prefHeight="20.0" prefWidth="400.0" />
             <TextField fx:id="toBox" promptText="do" />
+            <VBox prefHeight="20.0" prefWidth="400.0" />
+            <TextField fx:id="topicBox" promptText="temat" />
             <VBox prefHeight="29.0" prefWidth="400.0" />
             <TextArea fx:id="insideType" prefHeight="140.0" prefWidth="400.0" promptText="Treść wiadomości" />
-            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="402.0" text="WYŚLIJ">
+            <Button fx:id="sendButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="402.0" text="WYŚLIJ">
                <font>
                   <Font name="MS Gothic" size="18.0" />
                </font>
