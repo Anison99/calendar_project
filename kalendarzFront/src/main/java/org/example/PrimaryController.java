@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 public class PrimaryController implements Initializable {
     // ---- OBJECTS
     public Label dateLabel2;
@@ -27,6 +26,7 @@ public class PrimaryController implements Initializable {
     @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
+       // SceneSwitch.switchToScene2();
     }
 
     @FXML
@@ -47,6 +47,9 @@ public class PrimaryController implements Initializable {
     public void buttonOption(){
         String typeChoose = stringChoiceBox.getValue();
         typOption(typeChoose);
+    }
+    public void mailPage() throws IOException {
+        switchToSecondary();
     }
 
     private void typOption(String typeChoose) {
